@@ -1,0 +1,104 @@
+
+#system {
+		margin-left: 30%;
+		margin-top: 30%;
+		position: absolute;
+		-webkit-animation: rotation 1s infinite linear;
+		-moz-animation: rotation 1s infinite linear;
+		-o-animation: rotation 1s infinite linear;
+		animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(359deg);}
+}
+
+@-moz-keyframes rotation {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(359deg);}
+}
+
+@-o-keyframes rotation {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(359deg);}
+}
+
+@keyframes rotation {
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(359deg);}
+}
+
+#sun1 {
+    background: transparent;
+		position: absolute;
+    width: 30px;
+    height: 30px;
+		border: 15px solid orange;
+    text-align: center;
+		-webkit-transform: rotate(0deg);
+			 -moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				 -o-transform: rotate(0deg);
+}
+
+#sun2 {
+	background: transparent;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 15px solid orange;
+	text-align: center;
+	-webkit-transform: rotate(45deg);
+		 -moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			 -o-transform: rotate(45deg);
+
+}
+
+@-webkit-keyframes grow {
+	0%   {border-color: orange; width: 30px; height: 30px;}
+	25%  {border-color: yellow; width: 40px; height: 40px;}
+	50%  {border-color: red; width: 50px; height: 50px;}
+	75%  {border-color: yellow; width: 40px; height: 40px;}
+	100% {border-color: orange; width: 30px; height: 30px;}
+}
+
+@keyframes grow {
+	0%   {border-color: orange; width: 30px; height: 30px;}
+	25%  {border-color: yellow; width: 40px; height: 40px;}
+	50%  {border-color: red; width: 50px; height: 50px;}
+	75%  {border-color: yellow; width: 40px; height: 40px;}
+	100% {border-color: orange; width: 30px; height: 30px;}
+}
+
+.grow, .grow:after {
+		-webkit-animation: grow 1s 1 linear;
+		-moz-animation: grow 1s 1 linear;
+		-o-animation: grow 1s 1 linear;
+		animation: grow 1s 1 linear;
+}
+
+@-webkit-keyframes move {
+	0%   {border-color: orange; width: 30px; height: 30px;}
+	25%  {border-color: yellow; width: 40px; height: 40px;}
+	50%  {border-color: red; width: 50px; height: 50px;}
+	75%  {border-color: yellow; width: 40px; height: 40px;}
+	100% {border-color: orange; width: 30px; height: 30px;}
+}
+
+@keyframes move {
+	0%   {left: 0px; top: 0px;}
+	25%  {left: 100px; top: 0px;}
+	50%  {left: 200px; top: 0px;}
+	75%  {left: 100px; top: 0px;}
+	100% {left: 0px; top: 0px;}
+}
+
+.move {
+		position: absolute;
+		-webkit-animation: move 1s 1 linear;
+		-moz-animation: move 1s 1 linear;
+		-o-animation: move 1s 1 linear;
+		animation: move 1s 1 linear;
+}
